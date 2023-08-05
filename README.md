@@ -16,7 +16,14 @@ $ pip install requirements.txt
 Run a local PostgreSQL server with Docker:
 
 ```
-$ docker run --rm --name db -e POSTGRES_PASSWORD=<pwd> -e POSTGRES_USER=<user> -e POSTGRES_DB=<db> -p 5432:5432 postgres
+$ docker run --rm \
+    --name db \
+    -e POSTGRES_PASSWORD=<pwd> \
+    -e POSTGRES_USER=<user> \
+    -e POSTGRES_DB=<db> \
+    -p 5432:5432 \
+    -v data:/var/lib/postgresql/data \
+    postgres
 $ cat <<EOF >> ~/.pg_service.conf
 [my_service]
 host=localhost
