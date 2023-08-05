@@ -10,7 +10,7 @@ First, setup a virtual environment.
 $ python3 -m venv venv
 $ source venv/bin/activate
 $ pip install --upgrade pip
-$ pip install requirements.txt
+$ pip install -r requirements.txt
 ```
 
 Run a local PostgreSQL server with Docker:
