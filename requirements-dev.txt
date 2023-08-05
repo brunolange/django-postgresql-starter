@@ -1,2 +1,2 @@
 pre-commit
-flake8-bugbear
+flake8-bugbear # https://black.readthedocs.io/en/stable/the_black_code_style/current_style.html#flake8
