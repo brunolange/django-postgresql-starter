@@ -1,0 +1,17 @@
+{
+    "files.watcherExclude": {
+        "venv/**": true
+    },
+    "search.exclude": {
+        "venv/**": true,
+        "**/.mypy_cache/**": true,
+    },
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+    },
+    "python.analysis.typeCheckingMode": "basic"
+}
