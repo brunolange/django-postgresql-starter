@@ -45,3 +45,11 @@ Check that Django can interact with the database:
 ```
 $ ./manage.py showmigrations
 ```
+
+(Optional) Create a superuser to access Django's admin interface
+
+```
+$ ./manage.py createsuperuser
+```
+
+then navigate to localhost:8000/admin
